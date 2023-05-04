@@ -1,4 +1,4 @@
-package com.roynaldi19.bpai01_05stackwidget
+package com.roynaldi19.dc4_01stackwidget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -10,15 +10,13 @@ import android.widget.RemoteViews
 import android.widget.Toast
 import androidx.core.net.toUri
 
-/**
- * Implementation of App Widget functionality.
- */
+
 class ImagesBannerWidget : AppWidgetProvider() {
 
     companion object {
 
-        private const val TOAST_ACTION = "com.dicoding.picodiploma.TOAST_ACTION"
-        const val EXTRA_ITEM = "com.dicoding.picodiploma.EXTRA_ITEM"
+        private const val TOAST_ACTION = "com.roynaldi19.TOAST_ACTION"
+        const val EXTRA_ITEM = "com.roynaldi.EXTRA_ITEM"
 
         private fun updateAppWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
             val intent = Intent(context, StackWidgetService::class.java)
